@@ -18,7 +18,7 @@ pygame.mixer.init()
 while True:
     img = np.array(ImageGrab.grab())  # 获取屏幕像素
     if img.sum() > 1370702574:  # 像素总和超过 85%纯白就启动
-        pygame.mixer.music.load("start.mp3")  # 音乐路径
+        pygame.mixer.music.load("start.mp3")  # 音乐路径 《Shed a Light》
         pygame.mixer.music.play()  # 播放音乐
         os.system(r"D:\QQMusic\QQMusic1942.19.49.58\QQMusic.exe")  # 替换成原神启动路径
         print("Start.........!")
